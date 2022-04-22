@@ -6,8 +6,9 @@ def sol(content):
 	# 格式化 json, 类型是 str
 	# print(json.dumps(content, indent=2))
 	for i in content:
-		repo = Repo.clone_from(url=i['clone_url'], to_path='../github_stars/' + i['name'])
-		print(i['name'] + "备份完成")
+		print(i['name'] + '备份开始')
+		repo = Repo.clone_from(url=i['clone_url'], to_path='../Backup/' + i['name'])
+		print(i['name'] + '备份完成')
 
 def main():
 	user = 'fzrkexer'
