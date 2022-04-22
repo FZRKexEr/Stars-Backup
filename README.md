@@ -1,2 +1,7 @@
 # Stars-Backup
-备份 Your stars
+
+Backup your stars
+ 
+## Requirements 
+ - requests
+ - GitPython

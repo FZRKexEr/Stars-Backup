@@ -8,7 +8,7 @@ def sol(content):
 	address = []
 	for i in content:
 		address.append(i['clone_url'])
-	print(address)
+
 
 def main():
 	user = 'fzrkexer'
