@@ -7,6 +7,7 @@ def sol(content):
 	# print(json.dumps(content, indent=2))
 	for i in content:
 		repo = Repo.clone_from(url=i['clone_url'], to_path='../github_stars/' + i['name'])
+		print(i['name'] + "备份完成")
 
 def main():
 	user = 'fzrkexer'
