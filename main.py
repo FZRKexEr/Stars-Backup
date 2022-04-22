@@ -11,7 +11,7 @@ def sol(content):
 		print(i['name'] + '备份完成')
 
 def main():
-	user = 'fzrkexer'
+	user = input("Input the username: ")
 	for i in range(100):
 		star = requests.get('https://api.github.com/users/' + user + '/starred?page=' + str(i))
 		if len(json.loads(star.content)) == 0:
